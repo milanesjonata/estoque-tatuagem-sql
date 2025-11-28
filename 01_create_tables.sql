@@ -16,7 +16,7 @@ CREATE TABLE fornecedor (
 );
 
 CREATE TABLE produto (
-    id_poroduto INT AUTO_INCREMENT PRIMARY KEY,
+    id_produto INT AUTO_INCREMENT PRIMARY KEY,
     id_categoria INT NOT NULL,
     id_fornecedor INT NOT NULL,
     nome_produto VARCHAR(100) NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE produto (
 
 CREATE TABLE lote (
     id_estoque INT AUTO_INCREMENT PRIMARY KEY,
-    id_poroduto INT NOT NULL,
+    id_produto INT NOT NULL,
     id_fornecedor INT NOT NULL,
     numero_lote VARCHAR(40) NOT NULL,
     data_validade DATE,
